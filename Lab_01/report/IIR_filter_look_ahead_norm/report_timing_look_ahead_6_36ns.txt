@@ -1,0 +1,98 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIR_filter_std_pipe
+Version: O-2018.06-SP4
+Date   : Sun Nov 21 19:54:22 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: reg_3/data_out_reg[0]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: reg_5/data_out_reg[14]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIR_filter_std_pipe
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  reg_3/data_out_reg[0]/CK (DFFR_X1)                      0.00       0.00 r
+  reg_3/data_out_reg[0]/Q (DFFR_X1)                       0.11       0.11 r
+  reg_3/data_out[0] (ffd_N_bit14_9)                       0.00       0.11 r
+  add_v_sx/in2[0] (add_sub_N_bit14_2)                     0.00       0.11 r
+  add_v_sx/sub_16/B[0] (add_sub_N_bit14_2_DW01_sub_0)     0.00       0.11 r
+  add_v_sx/sub_16/U61/ZN (INV_X1)                         0.04       0.15 f
+  add_v_sx/sub_16/U79/ZN (OR2_X1)                         0.06       0.21 f
+  add_v_sx/sub_16/U64/ZN (XNOR2_X1)                       0.06       0.27 f
+  add_v_sx/sub_16/DIFF[1] (add_sub_N_bit14_2_DW01_sub_0)
+                                                          0.00       0.27 f
+  add_v_sx/U27/ZN (AOI22_X1)                              0.05       0.33 r
+  add_v_sx/U26/ZN (INV_X1)                                0.03       0.36 f
+  add_v_sx/result[1] (add_sub_N_bit14_2)                  0.00       0.36 f
+  add_sx/in2[1] (add_sub_N_bit14_0)                       0.00       0.36 f
+  add_sx/add_16/B[1] (add_sub_N_bit14_0_DW01_add_0)       0.00       0.36 f
+  add_sx/add_16/U59/ZN (NAND2_X1)                         0.04       0.40 r
+  add_sx/add_16/U34/ZN (NAND3_X1)                         0.04       0.44 f
+  add_sx/add_16/U1/ZN (NAND2_X1)                          0.03       0.48 r
+  add_sx/add_16/U37/ZN (NAND3_X1)                         0.04       0.52 f
+  add_sx/add_16/U2/ZN (NAND2_X1)                          0.04       0.56 r
+  add_sx/add_16/U50/ZN (NAND3_X1)                         0.04       0.60 f
+  add_sx/add_16/U4/ZN (NAND2_X1)                          0.04       0.64 r
+  add_sx/add_16/U22/ZN (NAND3_X1)                         0.04       0.68 f
+  add_sx/add_16/U7/ZN (NAND2_X1)                          0.04       0.72 r
+  add_sx/add_16/U31/ZN (NAND3_X1)                         0.04       0.76 f
+  add_sx/add_16/U74/ZN (NAND2_X1)                         0.04       0.79 r
+  add_sx/add_16/U32/ZN (NAND3_X1)                         0.04       0.84 f
+  add_sx/add_16/U81/ZN (NAND2_X1)                         0.04       0.88 r
+  add_sx/add_16/U62/ZN (NAND3_X1)                         0.03       0.91 f
+  add_sx/add_16/U16/ZN (NAND2_X1)                         0.03       0.95 r
+  add_sx/add_16/U77/ZN (NAND3_X1)                         0.04       0.99 f
+  add_sx/add_16/U53/ZN (NAND2_X1)                         0.04       1.03 r
+  add_sx/add_16/U84/ZN (NAND3_X1)                         0.04       1.07 f
+  add_sx/add_16/U61/ZN (NAND2_X1)                         0.04       1.10 r
+  add_sx/add_16/U20/ZN (NAND3_X1)                         0.04       1.14 f
+  add_sx/add_16/U10/ZN (NAND2_X1)                         0.04       1.18 r
+  add_sx/add_16/U9/ZN (NAND3_X1)                          0.04       1.22 f
+  add_sx/add_16/U89/ZN (NAND2_X1)                         0.03       1.25 r
+  add_sx/add_16/U14/ZN (NAND3_X1)                         0.04       1.30 f
+  add_sx/add_16/U82/ZN (NAND2_X1)                         0.03       1.33 r
+  add_sx/add_16/U90/ZN (NAND3_X1)                         0.04       1.36 f
+  add_sx/add_16/U83/ZN (XNOR2_X1)                         0.05       1.42 f
+  add_sx/add_16/SUM[14] (add_sub_N_bit14_0_DW01_add_0)
+                                                          0.00       1.42 f
+  add_sx/U8/ZN (AOI22_X1)                                 0.06       1.48 r
+  add_sx/U7/ZN (INV_X1)                                   0.02       1.50 f
+  add_sx/result[14] (add_sub_N_bit14_0)                   0.00       1.50 f
+  reg_5/data_in[14] (ffd_N_bit15_0)                       0.00       1.50 f
+  reg_5/U7/ZN (NAND2_X1)                                  0.03       1.53 r
+  reg_5/U6/ZN (OAI21_X1)                                  0.03       1.56 f
+  reg_5/data_out_reg[14]/D (DFFR_X1)                      0.01       1.57 f
+  data arrival time                                                  1.57
+
+  clock MY_CLK (rise edge)                                6.36       6.36
+  clock network delay (ideal)                             0.00       6.36
+  clock uncertainty                                      -0.07       6.29
+  reg_5/data_out_reg[14]/CK (DFFR_X1)                     0.00       6.29 r
+  library setup time                                     -0.04       6.25
+  data required time                                                 6.25
+  --------------------------------------------------------------------------
+  data required time                                                 6.25
+  data arrival time                                                 -1.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.68
+
+
+1
