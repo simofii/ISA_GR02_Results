@@ -1,0 +1,104 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIR_filter_mask_in
+Version: O-2018.06-SP4
+Date   : Tue Oct 26 13:15:56 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: del/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: reg_DOUT/data_out_reg[13]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIR_filter_mask_in 5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  del/data_out_reg[1]/CK (DFFR_X1)                        0.00       0.00 r
+  del/data_out_reg[1]/Q (DFFR_X1)                         0.19       0.19 r
+  del/data_out[1] (ffd_N_bit6)                            0.00       0.19 r
+  molta1/in1[1] (molt_N_bit6_2)                           0.00       0.19 r
+  molta1/mult_17/a[1] (molt_N_bit6_2_DW_mult_tc_0)        0.00       0.19 r
+  molta1/mult_17/U109/ZN (INV_X1)                         0.04       0.23 f
+  molta1/mult_17/U107/Z (XOR2_X1)                         0.14       0.37 r
+  molta1/mult_17/U157/ZN (NAND2_X1)                       0.09       0.46 f
+  molta1/mult_17/U129/ZN (OAI22_X1)                       0.07       0.54 r
+  molta1/mult_17/U22/S (HA_X1)                            0.05       0.59 f
+  molta1/mult_17/U9/CO (FA_X1)                            0.10       0.69 f
+  molta1/mult_17/U8/CO (FA_X1)                            0.09       0.78 f
+  molta1/mult_17/U7/CO (FA_X1)                            0.09       0.87 f
+  molta1/mult_17/U6/CO (FA_X1)                            0.09       0.96 f
+  molta1/mult_17/U5/CO (FA_X1)                            0.09       1.05 f
+  molta1/mult_17/U4/CO (FA_X1)                            0.09       1.14 f
+  molta1/mult_17/U3/S (FA_X1)                             0.15       1.29 r
+  molta1/mult_17/product[9] (molt_N_bit6_2_DW_mult_tc_0)
+                                                          0.00       1.29 r
+  molta1/result[9] (molt_N_bit6_2)                        0.00       1.29 r
+  add_sx/in2[13] (add_sub_N_bit14_1)                      0.00       1.29 r
+  add_sx/sub_16/B[14] (add_sub_N_bit14_1_DW01_sub_0)      0.00       1.29 r
+  add_sx/sub_16/U1/ZN (INV_X1)                            0.04       1.33 f
+  add_sx/sub_16/U2_13/CO (FA_X1)                          0.11       1.44 f
+  add_sx/sub_16/U2_14/S (FA_X1)                           0.13       1.57 r
+  add_sx/sub_16/DIFF[14] (add_sub_N_bit14_1_DW01_sub_0)
+                                                          0.00       1.57 r
+  add_sx/U15/ZN (AOI22_X1)                                0.03       1.60 f
+  add_sx/U14/ZN (INV_X1)                                  0.07       1.67 r
+  add_sx/result[14] (add_sub_N_bit14_1)                   0.00       1.67 r
+  moltb0/in1[5] (molt_N_bit6_0)                           0.00       1.67 r
+  moltb0/mult_17/a[5] (molt_N_bit6_0_DW_mult_tc_0)        0.00       1.67 r
+  moltb0/mult_17/U110/ZN (INV_X1)                         0.04       1.71 f
+  moltb0/mult_17/U163/ZN (XNOR2_X1)                       0.05       1.76 r
+  moltb0/mult_17/U162/ZN (NAND2_X1)                       0.06       1.82 f
+  moltb0/mult_17/U137/ZN (OAI22_X1)                       0.08       1.90 r
+  moltb0/mult_17/U20/S (HA_X1)                            0.08       1.98 r
+  moltb0/mult_17/U19/S (FA_X1)                            0.12       2.10 f
+  moltb0/mult_17/U7/CO (FA_X1)                            0.10       2.20 f
+  moltb0/mult_17/U6/CO (FA_X1)                            0.09       2.29 f
+  moltb0/mult_17/U5/CO (FA_X1)                            0.09       2.38 f
+  moltb0/mult_17/U4/CO (FA_X1)                            0.09       2.47 f
+  moltb0/mult_17/U3/S (FA_X1)                             0.17       2.64 r
+  moltb0/mult_17/product[9] (molt_N_bit6_0_DW_mult_tc_0)
+                                                          0.00       2.64 r
+  moltb0/result[9] (molt_N_bit6_0)                        0.00       2.64 r
+  add_dx/in1[13] (add_sub_N_bit14_0)                      0.00       2.64 r
+  add_dx/add_16/A[13] (add_sub_N_bit14_0_DW01_add_0)      0.00       2.64 r
+  add_dx/add_16/U1_13/S (FA_X1)                           0.13       2.77 f
+  add_dx/add_16/SUM[13] (add_sub_N_bit14_0_DW01_add_0)
+                                                          0.00       2.77 f
+  add_dx/U17/ZN (AOI22_X1)                                0.06       2.83 r
+  add_dx/U16/ZN (INV_X1)                                  0.02       2.85 f
+  add_dx/result[13] (add_sub_N_bit14_0)                   0.00       2.85 f
+  reg_DOUT/data_in[13] (ffd_N_bit14_0)                    0.00       2.85 f
+  reg_DOUT/U15/ZN (NAND2_X1)                              0.03       2.88 r
+  reg_DOUT/U14/ZN (OAI21_X1)                              0.03       2.91 f
+  reg_DOUT/data_out_reg[13]/D (DFFR_X1)                   0.01       2.92 f
+  data arrival time                                                  2.92
+
+  clock MY_CLK (rise edge)                               12.12      12.12
+  clock network delay (ideal)                             0.00      12.12
+  clock uncertainty                                      -0.07      12.05
+  reg_DOUT/data_out_reg[13]/CK (DFFR_X1)                  0.00      12.05 r
+  library setup time                                     -0.04      12.01
+  data required time                                                12.01
+  --------------------------------------------------------------------------
+  data required time                                                12.01
+  data arrival time                                                 -2.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.09
+
+
+1
