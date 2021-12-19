@@ -71,7 +71,7 @@ int main()
 		bool next_blank = false;
 		short input_number = -1;
 		
-		for (int i = 0; i < NUM_COL; i++)	//leggo riga file e divido i dati il numero giusto di volta, il file è ipotizzato corretto
+		for (int i = 0; i < NUM_COL; i++)	//leggo riga file e divido i dati il numero giusto di volta, il file ï¿½ ipotizzato corretto
 		{
 			
 			if (char(file_in.get()) == '0') {	//leggo '0'
@@ -224,7 +224,7 @@ bitset<64> find_adder(vector<vector<Signal>>& tab, const int* stages, const int&
 		for (int j = 0; j < (int)tab[0].size(); j++)
 		{
 			tmp.item_num = j;
-			if (vhdl_portmap.is_open())			//se il file di output è disponibile, scrivo il codice vhdl del ripple carry adder
+			if (vhdl_portmap.is_open())			//se il file di output ï¿½ disponibile, scrivo il codice vhdl del ripple carry adder
 			{
 				vhdl_portmap << endl << endl << "add_num" << num_adder_in_stage << "_st" << adder_stage << " : ";
 				if (first == true)
@@ -255,7 +255,7 @@ bitset<64> find_adder(vector<vector<Signal>>& tab, const int* stages, const int&
 			num_adder_in_stage++;
 		}
 
-		if (vhdl_signal.is_open())		//se il file di output è disponibile, istanzion i segnali utilizzati per l'implementazione del ripple carry adder
+		if (vhdl_signal.is_open())		//se il file di output ï¿½ disponibile, istanzion i segnali utilizzati per l'implementazione del ripple carry adder
 		{
 			vhdl_signal << endl << "signal carry_st" << adder_stage << " : std_logic_vector(" << num_adder_in_stage - 1 << " downto 0);";
 			vhdl_signal << endl << "signal result : std_logic_vector(" << num_adder_in_stage << " downto 0);";
@@ -383,7 +383,7 @@ bitset<64> find_adder(vector<vector<Signal>>& tab, const int* stages, const int&
 					num_adder_in_stage++;
 				}
 
-				//copio i restanti segnali in tab_new, cioè i segnali che non sono stati dati in ingtresso ad un adder
+				//copio i restanti segnali in tab_new, cioï¿½ i segnali che non sono stati dati in ingtresso ad un adder
 				for (int k = 0; k < (int)tab.size(); k++)
 				{
 					if (tab[k][i].sig_code != '0' && tab[k][i].used == false)
@@ -580,15 +580,7 @@ void partial_product(const long long& in1, const long long& in2, const int& n_bi
 
 		
 		pp_tab.push_back(tmp);
-
-
-
 	}
-
-
-
-
-
 }
 
 void clear_used_in_tab(vector<vector<Signal>>& tab)
