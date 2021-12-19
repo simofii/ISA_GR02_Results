@@ -1,0 +1,289 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul_reg_in
+Version: O-2018.06-SP4
+Date   : Sat Dec  4 22:03:13 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I1/B_SIG_reg[1]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I2/SIG_in_reg[27]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul_reg_in       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  I1/B_SIG_reg[1]/CK (SDFF_X2)                            0.00       0.00 r
+  I1/B_SIG_reg[1]/Q (SDFF_X2)                             0.10       0.10 r
+  I1/B_SIG[1] (FPmul_stage1)                              0.00       0.10 r
+  I2/B_SIG[1] (FPmul_stage2)                              0.00       0.10 r
+  I2/I2COMBO/in2[1] (MBE_molt_N_bit32)                    0.00       0.10 r
+  I2/I2COMBO/partialprod_2/b[0] (partial_product_generator_N_bit32_16)
+                                                          0.00       0.10 r
+  I2/I2COMBO/partialprod_2/U157/ZN (INV_X1)               0.03       0.14 f
+  I2/I2COMBO/partialprod_2/U97/ZN (OAI21_X1)              0.04       0.18 r
+  I2/I2COMBO/partialprod_2/U145/Z (XOR2_X1)               0.07       0.25 r
+  I2/I2COMBO/partialprod_2/U3/ZN (OAI22_X1)               0.04       0.29 f
+  I2/I2COMBO/partialprod_2/U161/ZN (INV_X1)               0.03       0.32 r
+  I2/I2COMBO/partialprod_2/U142/ZN (NAND3_X1)             0.03       0.35 f
+  I2/I2COMBO/partialprod_2/data_out[2] (partial_product_generator_N_bit32_16)
+                                                          0.00       0.35 f
+  I2/I2COMBO/add_num0_st6/in2 (ha_3)                      0.00       0.35 f
+  I2/I2COMBO/add_num0_st6/U2/Z (XOR2_X1)                  0.07       0.42 f
+  I2/I2COMBO/add_num0_st6/sum (ha_3)                      0.00       0.42 f
+  I2/I2COMBO/add_num2_st7/in1 (fa_63)                     0.00       0.42 f
+  I2/I2COMBO/add_num2_st7/U4/Z (XOR2_X1)                  0.08       0.50 f
+  I2/I2COMBO/add_num2_st7/U6/ZN (AOI22_X1)                0.06       0.56 r
+  I2/I2COMBO/add_num2_st7/U5/ZN (INV_X1)                  0.03       0.59 f
+  I2/I2COMBO/add_num2_st7/c_out (fa_63)                   0.00       0.59 f
+  I2/I2COMBO/add_num3_st7/c_in (fa_62)                    0.00       0.59 f
+  I2/I2COMBO/add_num3_st7/U4/Z (XOR2_X1)                  0.07       0.66 f
+  I2/I2COMBO/add_num3_st7/U6/ZN (AOI22_X1)                0.06       0.72 r
+  I2/I2COMBO/add_num3_st7/U5/ZN (INV_X1)                  0.03       0.74 f
+  I2/I2COMBO/add_num3_st7/c_out (fa_62)                   0.00       0.74 f
+  I2/I2COMBO/add_num4_st7/c_in (fa_61)                    0.00       0.74 f
+  I2/I2COMBO/add_num4_st7/U4/Z (XOR2_X1)                  0.07       0.81 f
+  I2/I2COMBO/add_num4_st7/U6/ZN (AOI22_X1)                0.06       0.87 r
+  I2/I2COMBO/add_num4_st7/U5/ZN (INV_X1)                  0.03       0.90 f
+  I2/I2COMBO/add_num4_st7/c_out (fa_61)                   0.00       0.90 f
+  I2/I2COMBO/add_num5_st7/c_in (fa_60)                    0.00       0.90 f
+  I2/I2COMBO/add_num5_st7/U4/Z (XOR2_X1)                  0.07       0.96 f
+  I2/I2COMBO/add_num5_st7/U5/ZN (AOI22_X1)                0.05       1.02 r
+  I2/I2COMBO/add_num5_st7/U6/ZN (INV_X1)                  0.03       1.05 f
+  I2/I2COMBO/add_num5_st7/c_out (fa_60)                   0.00       1.05 f
+  I2/I2COMBO/add_num6_st7/c_in (fa_59)                    0.00       1.05 f
+  I2/I2COMBO/add_num6_st7/U1/ZN (NAND2_X1)                0.03       1.08 r
+  I2/I2COMBO/add_num6_st7/U4/ZN (NAND2_X1)                0.03       1.11 f
+  I2/I2COMBO/add_num6_st7/U10/ZN (AOI22_X1)               0.06       1.16 r
+  I2/I2COMBO/add_num6_st7/U9/ZN (INV_X1)                  0.03       1.19 f
+  I2/I2COMBO/add_num6_st7/c_out (fa_59)                   0.00       1.19 f
+  I2/I2COMBO/add_num7_st7/c_in (fa_58)                    0.00       1.19 f
+  I2/I2COMBO/add_num7_st7/U4/Z (XOR2_X1)                  0.07       1.26 f
+  I2/I2COMBO/add_num7_st7/U6/ZN (AOI22_X1)                0.06       1.32 r
+  I2/I2COMBO/add_num7_st7/U5/ZN (INV_X1)                  0.03       1.34 f
+  I2/I2COMBO/add_num7_st7/c_out (fa_58)                   0.00       1.34 f
+  I2/I2COMBO/add_num8_st7/c_in (fa_57)                    0.00       1.34 f
+  I2/I2COMBO/add_num8_st7/U4/ZN (XNOR2_X1)                0.06       1.40 f
+  I2/I2COMBO/add_num8_st7/U7/ZN (AOI22_X1)                0.06       1.46 r
+  I2/I2COMBO/add_num8_st7/U6/ZN (INV_X1)                  0.03       1.48 f
+  I2/I2COMBO/add_num8_st7/c_out (fa_57)                   0.00       1.48 f
+  I2/I2COMBO/add_num9_st7/c_in (fa_56)                    0.00       1.48 f
+  I2/I2COMBO/add_num9_st7/U5/ZN (XNOR2_X1)                0.06       1.54 f
+  I2/I2COMBO/add_num9_st7/U7/ZN (AOI22_X1)                0.06       1.60 r
+  I2/I2COMBO/add_num9_st7/U6/ZN (INV_X1)                  0.03       1.62 f
+  I2/I2COMBO/add_num9_st7/c_out (fa_56)                   0.00       1.62 f
+  I2/I2COMBO/add_num10_st7/c_in (fa_55)                   0.00       1.62 f
+  I2/I2COMBO/add_num10_st7/U5/ZN (XNOR2_X1)               0.06       1.68 f
+  I2/I2COMBO/add_num10_st7/U7/ZN (AOI22_X1)               0.06       1.74 r
+  I2/I2COMBO/add_num10_st7/U6/ZN (INV_X1)                 0.03       1.76 f
+  I2/I2COMBO/add_num10_st7/c_out (fa_55)                  0.00       1.76 f
+  I2/I2COMBO/add_num11_st7/c_in (fa_54)                   0.00       1.76 f
+  I2/I2COMBO/add_num11_st7/U5/ZN (XNOR2_X1)               0.06       1.82 f
+  I2/I2COMBO/add_num11_st7/U7/ZN (AOI22_X1)               0.06       1.88 r
+  I2/I2COMBO/add_num11_st7/U6/ZN (INV_X1)                 0.03       1.91 f
+  I2/I2COMBO/add_num11_st7/c_out (fa_54)                  0.00       1.91 f
+  I2/I2COMBO/add_num12_st7/c_in (fa_53)                   0.00       1.91 f
+  I2/I2COMBO/add_num12_st7/U5/ZN (XNOR2_X1)               0.06       1.96 f
+  I2/I2COMBO/add_num12_st7/U7/ZN (AOI22_X1)               0.06       2.02 r
+  I2/I2COMBO/add_num12_st7/U6/ZN (INV_X1)                 0.03       2.05 f
+  I2/I2COMBO/add_num12_st7/c_out (fa_53)                  0.00       2.05 f
+  I2/I2COMBO/add_num13_st7/c_in (fa_52)                   0.00       2.05 f
+  I2/I2COMBO/add_num13_st7/U2/ZN (XNOR2_X1)               0.06       2.10 f
+  I2/I2COMBO/add_num13_st7/U4/ZN (OAI22_X1)               0.06       2.16 r
+  I2/I2COMBO/add_num13_st7/c_out (fa_52)                  0.00       2.16 r
+  I2/I2COMBO/add_num14_st7/c_in (fa_51)                   0.00       2.16 r
+  I2/I2COMBO/add_num14_st7/U4/ZN (XNOR2_X1)               0.04       2.21 f
+  I2/I2COMBO/add_num14_st7/U7/ZN (AOI22_X1)               0.06       2.26 r
+  I2/I2COMBO/add_num14_st7/U6/ZN (INV_X1)                 0.03       2.29 f
+  I2/I2COMBO/add_num14_st7/c_out (fa_51)                  0.00       2.29 f
+  I2/I2COMBO/add_num15_st7/c_in (fa_50)                   0.00       2.29 f
+  I2/I2COMBO/add_num15_st7/U5/ZN (XNOR2_X1)               0.06       2.35 f
+  I2/I2COMBO/add_num15_st7/U8/ZN (AOI22_X1)               0.05       2.40 r
+  I2/I2COMBO/add_num15_st7/U7/ZN (INV_X1)                 0.03       2.43 f
+  I2/I2COMBO/add_num15_st7/c_out (fa_50)                  0.00       2.43 f
+  I2/I2COMBO/add_num16_st7/c_in (fa_49)                   0.00       2.43 f
+  I2/I2COMBO/add_num16_st7/U5/ZN (XNOR2_X1)               0.06       2.48 f
+  I2/I2COMBO/add_num16_st7/U7/ZN (AOI22_X1)               0.06       2.54 r
+  I2/I2COMBO/add_num16_st7/U6/ZN (INV_X1)                 0.03       2.57 f
+  I2/I2COMBO/add_num16_st7/c_out (fa_49)                  0.00       2.57 f
+  I2/I2COMBO/add_num17_st7/c_in (fa_48)                   0.00       2.57 f
+  I2/I2COMBO/add_num17_st7/U4/ZN (XNOR2_X1)               0.06       2.63 f
+  I2/I2COMBO/add_num17_st7/U7/ZN (AOI22_X1)               0.06       2.68 r
+  I2/I2COMBO/add_num17_st7/U6/ZN (INV_X1)                 0.03       2.71 f
+  I2/I2COMBO/add_num17_st7/c_out (fa_48)                  0.00       2.71 f
+  I2/I2COMBO/add_num18_st7/c_in (fa_47)                   0.00       2.71 f
+  I2/I2COMBO/add_num18_st7/U5/ZN (XNOR2_X1)               0.06       2.77 f
+  I2/I2COMBO/add_num18_st7/U7/ZN (AOI22_X1)               0.06       2.82 r
+  I2/I2COMBO/add_num18_st7/U6/ZN (INV_X1)                 0.03       2.85 f
+  I2/I2COMBO/add_num18_st7/c_out (fa_47)                  0.00       2.85 f
+  I2/I2COMBO/add_num19_st7/c_in (fa_46)                   0.00       2.85 f
+  I2/I2COMBO/add_num19_st7/U5/ZN (XNOR2_X1)               0.06       2.91 f
+  I2/I2COMBO/add_num19_st7/U7/ZN (AOI22_X1)               0.06       2.96 r
+  I2/I2COMBO/add_num19_st7/U6/ZN (INV_X1)                 0.03       2.99 f
+  I2/I2COMBO/add_num19_st7/c_out (fa_46)                  0.00       2.99 f
+  I2/I2COMBO/add_num20_st7/c_in (fa_45)                   0.00       2.99 f
+  I2/I2COMBO/add_num20_st7/U5/ZN (XNOR2_X1)               0.06       3.05 f
+  I2/I2COMBO/add_num20_st7/U7/ZN (AOI22_X1)               0.06       3.11 r
+  I2/I2COMBO/add_num20_st7/U6/ZN (INV_X1)                 0.03       3.13 f
+  I2/I2COMBO/add_num20_st7/c_out (fa_45)                  0.00       3.13 f
+  I2/I2COMBO/add_num21_st7/c_in (fa_44)                   0.00       3.13 f
+  I2/I2COMBO/add_num21_st7/U5/ZN (XNOR2_X1)               0.06       3.19 f
+  I2/I2COMBO/add_num21_st7/U7/ZN (AOI22_X1)               0.06       3.25 r
+  I2/I2COMBO/add_num21_st7/U6/ZN (INV_X1)                 0.03       3.27 f
+  I2/I2COMBO/add_num21_st7/c_out (fa_44)                  0.00       3.27 f
+  I2/I2COMBO/add_num22_st7/c_in (fa_43)                   0.00       3.27 f
+  I2/I2COMBO/add_num22_st7/U5/ZN (XNOR2_X1)               0.06       3.33 f
+  I2/I2COMBO/add_num22_st7/U7/ZN (AOI22_X1)               0.05       3.38 r
+  I2/I2COMBO/add_num22_st7/U6/ZN (INV_X1)                 0.03       3.41 f
+  I2/I2COMBO/add_num22_st7/c_out (fa_43)                  0.00       3.41 f
+  I2/I2COMBO/add_num23_st7/c_in (fa_42)                   0.00       3.41 f
+  I2/I2COMBO/add_num23_st7/U5/ZN (XNOR2_X1)               0.06       3.47 f
+  I2/I2COMBO/add_num23_st7/U7/ZN (AOI22_X1)               0.06       3.52 r
+  I2/I2COMBO/add_num23_st7/U6/ZN (INV_X1)                 0.03       3.55 f
+  I2/I2COMBO/add_num23_st7/c_out (fa_42)                  0.00       3.55 f
+  I2/I2COMBO/add_num24_st7/c_in (fa_41)                   0.00       3.55 f
+  I2/I2COMBO/add_num24_st7/U2/ZN (XNOR2_X1)               0.06       3.61 f
+  I2/I2COMBO/add_num24_st7/U4/ZN (OAI22_X1)               0.06       3.67 r
+  I2/I2COMBO/add_num24_st7/c_out (fa_41)                  0.00       3.67 r
+  I2/I2COMBO/add_num25_st7/c_in (fa_40)                   0.00       3.67 r
+  I2/I2COMBO/add_num25_st7/U4/ZN (XNOR2_X1)               0.04       3.71 f
+  I2/I2COMBO/add_num25_st7/U7/ZN (AOI22_X1)               0.06       3.77 r
+  I2/I2COMBO/add_num25_st7/U6/ZN (INV_X1)                 0.03       3.79 f
+  I2/I2COMBO/add_num25_st7/c_out (fa_40)                  0.00       3.79 f
+  I2/I2COMBO/add_num26_st7/c_in (fa_39)                   0.00       3.79 f
+  I2/I2COMBO/add_num26_st7/U4/ZN (XNOR2_X1)               0.06       3.85 f
+  I2/I2COMBO/add_num26_st7/U7/ZN (AOI22_X1)               0.06       3.91 r
+  I2/I2COMBO/add_num26_st7/U6/ZN (INV_X1)                 0.03       3.93 f
+  I2/I2COMBO/add_num26_st7/c_out (fa_39)                  0.00       3.93 f
+  I2/I2COMBO/add_num27_st7/c_in (fa_38)                   0.00       3.93 f
+  I2/I2COMBO/add_num27_st7/U6/ZN (XNOR2_X1)               0.06       3.99 f
+  I2/I2COMBO/add_num27_st7/U8/ZN (AOI22_X1)               0.05       4.04 r
+  I2/I2COMBO/add_num27_st7/U7/ZN (INV_X1)                 0.03       4.07 f
+  I2/I2COMBO/add_num27_st7/c_out (fa_38)                  0.00       4.07 f
+  I2/I2COMBO/add_num28_st7/c_in (fa_37)                   0.00       4.07 f
+  I2/I2COMBO/add_num28_st7/U4/ZN (XNOR2_X1)               0.06       4.13 f
+  I2/I2COMBO/add_num28_st7/U7/ZN (AOI22_X1)               0.06       4.19 r
+  I2/I2COMBO/add_num28_st7/U6/ZN (INV_X1)                 0.03       4.21 f
+  I2/I2COMBO/add_num28_st7/c_out (fa_37)                  0.00       4.21 f
+  I2/I2COMBO/add_num29_st7/c_in (fa_36)                   0.00       4.21 f
+  I2/I2COMBO/add_num29_st7/U5/ZN (XNOR2_X1)               0.06       4.27 f
+  I2/I2COMBO/add_num29_st7/U7/ZN (AOI22_X1)               0.06       4.33 r
+  I2/I2COMBO/add_num29_st7/U6/ZN (INV_X1)                 0.03       4.35 f
+  I2/I2COMBO/add_num29_st7/c_out (fa_36)                  0.00       4.35 f
+  I2/I2COMBO/add_num30_st7/c_in (fa_35)                   0.00       4.35 f
+  I2/I2COMBO/add_num30_st7/U6/ZN (XNOR2_X1)               0.06       4.41 f
+  I2/I2COMBO/add_num30_st7/U8/ZN (AOI22_X1)               0.05       4.46 r
+  I2/I2COMBO/add_num30_st7/U7/ZN (INV_X1)                 0.03       4.49 f
+  I2/I2COMBO/add_num30_st7/c_out (fa_35)                  0.00       4.49 f
+  I2/I2COMBO/add_num31_st7/c_in (fa_34)                   0.00       4.49 f
+  I2/I2COMBO/add_num31_st7/U6/ZN (XNOR2_X1)               0.06       4.54 f
+  I2/I2COMBO/add_num31_st7/U8/ZN (AOI22_X1)               0.05       4.60 r
+  I2/I2COMBO/add_num31_st7/U7/ZN (INV_X1)                 0.03       4.63 f
+  I2/I2COMBO/add_num31_st7/c_out (fa_34)                  0.00       4.63 f
+  I2/I2COMBO/add_num32_st7/c_in (fa_33)                   0.00       4.63 f
+  I2/I2COMBO/add_num32_st7/U2/ZN (XNOR2_X1)               0.06       4.68 f
+  I2/I2COMBO/add_num32_st7/U4/ZN (OAI22_X1)               0.06       4.74 r
+  I2/I2COMBO/add_num32_st7/c_out (fa_33)                  0.00       4.74 r
+  I2/I2COMBO/add_num33_st7/c_in (fa_32)                   0.00       4.74 r
+  I2/I2COMBO/add_num33_st7/U5/ZN (XNOR2_X1)               0.04       4.78 f
+  I2/I2COMBO/add_num33_st7/U7/ZN (AOI22_X1)               0.06       4.84 r
+  I2/I2COMBO/add_num33_st7/U6/ZN (INV_X1)                 0.03       4.87 f
+  I2/I2COMBO/add_num33_st7/c_out (fa_32)                  0.00       4.87 f
+  I2/I2COMBO/add_num34_st7/c_in (fa_31)                   0.00       4.87 f
+  I2/I2COMBO/add_num34_st7/U5/ZN (XNOR2_X1)               0.06       4.93 f
+  I2/I2COMBO/add_num34_st7/U7/ZN (AOI22_X1)               0.06       4.98 r
+  I2/I2COMBO/add_num34_st7/U6/ZN (INV_X1)                 0.03       5.01 f
+  I2/I2COMBO/add_num34_st7/c_out (fa_31)                  0.00       5.01 f
+  I2/I2COMBO/add_num35_st7/c_in (fa_30)                   0.00       5.01 f
+  I2/I2COMBO/add_num35_st7/U5/ZN (XNOR2_X1)               0.06       5.07 f
+  I2/I2COMBO/add_num35_st7/U7/ZN (AOI22_X1)               0.06       5.12 r
+  I2/I2COMBO/add_num35_st7/U6/ZN (INV_X1)                 0.03       5.15 f
+  I2/I2COMBO/add_num35_st7/c_out (fa_30)                  0.00       5.15 f
+  I2/I2COMBO/add_num36_st7/c_in (fa_29)                   0.00       5.15 f
+  I2/I2COMBO/add_num36_st7/U2/ZN (XNOR2_X1)               0.06       5.21 f
+  I2/I2COMBO/add_num36_st7/U4/ZN (OAI22_X1)               0.06       5.27 r
+  I2/I2COMBO/add_num36_st7/c_out (fa_29)                  0.00       5.27 r
+  I2/I2COMBO/add_num37_st7/c_in (fa_28)                   0.00       5.27 r
+  I2/I2COMBO/add_num37_st7/U5/ZN (XNOR2_X1)               0.07       5.33 r
+  I2/I2COMBO/add_num37_st7/U7/ZN (AOI22_X1)               0.04       5.37 f
+  I2/I2COMBO/add_num37_st7/U6/ZN (INV_X1)                 0.03       5.41 r
+  I2/I2COMBO/add_num37_st7/c_out (fa_28)                  0.00       5.41 r
+  I2/I2COMBO/add_num38_st7/c_in (fa_27)                   0.00       5.41 r
+  I2/I2COMBO/add_num38_st7/U5/ZN (XNOR2_X1)               0.06       5.47 r
+  I2/I2COMBO/add_num38_st7/U7/ZN (AOI22_X1)               0.04       5.50 f
+  I2/I2COMBO/add_num38_st7/U6/ZN (INV_X1)                 0.03       5.54 r
+  I2/I2COMBO/add_num38_st7/c_out (fa_27)                  0.00       5.54 r
+  I2/I2COMBO/add_num39_st7/c_in (fa_26)                   0.00       5.54 r
+  I2/I2COMBO/add_num39_st7/U2/ZN (XNOR2_X1)               0.06       5.60 r
+  I2/I2COMBO/add_num39_st7/U4/ZN (OAI22_X1)               0.04       5.63 f
+  I2/I2COMBO/add_num39_st7/c_out (fa_26)                  0.00       5.63 f
+  I2/I2COMBO/add_num40_st7/c_in (fa_25)                   0.00       5.63 f
+  I2/I2COMBO/add_num40_st7/U5/ZN (XNOR2_X1)               0.06       5.69 f
+  I2/I2COMBO/add_num40_st7/U7/ZN (AOI22_X1)               0.06       5.75 r
+  I2/I2COMBO/add_num40_st7/U6/ZN (INV_X1)                 0.03       5.78 f
+  I2/I2COMBO/add_num40_st7/c_out (fa_25)                  0.00       5.78 f
+  I2/I2COMBO/add_num41_st7/c_in (fa_24)                   0.00       5.78 f
+  I2/I2COMBO/add_num41_st7/U5/ZN (XNOR2_X1)               0.06       5.84 f
+  I2/I2COMBO/add_num41_st7/U7/ZN (AOI22_X1)               0.06       5.89 r
+  I2/I2COMBO/add_num41_st7/U6/ZN (INV_X1)                 0.03       5.92 f
+  I2/I2COMBO/add_num41_st7/c_out (fa_24)                  0.00       5.92 f
+  I2/I2COMBO/add_num42_st7/c_in (fa_23)                   0.00       5.92 f
+  I2/I2COMBO/add_num42_st7/U2/ZN (XNOR2_X1)               0.06       5.98 f
+  I2/I2COMBO/add_num42_st7/U4/ZN (OAI22_X1)               0.06       6.04 r
+  I2/I2COMBO/add_num42_st7/c_out (fa_23)                  0.00       6.04 r
+  I2/I2COMBO/add_num43_st7/c_in (fa_22)                   0.00       6.04 r
+  I2/I2COMBO/add_num43_st7/U5/ZN (XNOR2_X1)               0.07       6.10 r
+  I2/I2COMBO/add_num43_st7/U7/ZN (AOI22_X1)               0.04       6.14 f
+  I2/I2COMBO/add_num43_st7/U6/ZN (INV_X1)                 0.03       6.18 r
+  I2/I2COMBO/add_num43_st7/c_out (fa_22)                  0.00       6.18 r
+  I2/I2COMBO/add_num44_st7/c_in (fa_21)                   0.00       6.18 r
+  I2/I2COMBO/add_num44_st7/U2/ZN (XNOR2_X1)               0.06       6.24 r
+  I2/I2COMBO/add_num44_st7/U4/ZN (OAI22_X1)               0.04       6.27 f
+  I2/I2COMBO/add_num44_st7/c_out (fa_21)                  0.00       6.27 f
+  I2/I2COMBO/add_num45_st7/c_in (fa_20)                   0.00       6.27 f
+  I2/I2COMBO/add_num45_st7/U5/ZN (XNOR2_X1)               0.06       6.33 f
+  I2/I2COMBO/add_num45_st7/U7/ZN (AOI22_X1)               0.06       6.39 r
+  I2/I2COMBO/add_num45_st7/U6/ZN (INV_X1)                 0.03       6.41 f
+  I2/I2COMBO/add_num45_st7/c_out (fa_20)                  0.00       6.41 f
+  I2/I2COMBO/add_num46_st7/c_in (fa_19)                   0.00       6.41 f
+  I2/I2COMBO/add_num46_st7/U5/ZN (XNOR2_X1)               0.06       6.47 f
+  I2/I2COMBO/add_num46_st7/U7/ZN (AOI22_X1)               0.05       6.52 r
+  I2/I2COMBO/add_num46_st7/U6/ZN (INV_X1)                 0.03       6.55 f
+  I2/I2COMBO/add_num46_st7/c_out (fa_19)                  0.00       6.55 f
+  I2/I2COMBO/add_num47_st7/c_in (fa_18)                   0.00       6.55 f
+  I2/I2COMBO/add_num47_st7/U6/ZN (XNOR2_X1)               0.06       6.61 f
+  I2/I2COMBO/add_num47_st7/U4/ZN (XNOR2_X1)               0.06       6.67 f
+  I2/I2COMBO/add_num47_st7/sum (fa_18)                    0.00       6.67 f
+  I2/I2COMBO/sig_out[47] (MBE_molt_N_bit32)               0.00       6.67 f
+  I2/SIG_in_reg[27]/D (DFF_X1)                            0.01       6.67 f
+  data arrival time                                                  6.67
+
+  clock MY_CLK (rise edge)                                6.79       6.79
+  clock network delay (ideal)                             0.00       6.79
+  clock uncertainty                                      -0.07       6.72
+  I2/SIG_in_reg[27]/CK (DFF_X1)                           0.00       6.72 r
+  library setup time                                     -0.04       6.68
+  data required time                                                 6.68
+  --------------------------------------------------------------------------
+  data required time                                                 6.68
+  data arrival time                                                 -6.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

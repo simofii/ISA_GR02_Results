@@ -1,0 +1,15 @@
+
+signal sum_st1 : std_logic_vector(51 downto 0);
+signal carry_st1 : std_logic_vector(51 downto 0);
+signal sum_st2 : std_logic_vector(115 downto 0);
+signal carry_st2 : std_logic_vector(115 downto 0);
+signal sum_st3 : std_logic_vector(128 downto 0);
+signal carry_st3 : std_logic_vector(128 downto 0);
+signal sum_st4 : std_logic_vector(105 downto 0);
+signal carry_st4 : std_logic_vector(105 downto 0);
+signal sum_st5 : std_logic_vector(58 downto 0);
+signal carry_st5 : std_logic_vector(58 downto 0);
+signal sum_st6 : std_logic_vector(61 downto 0);
+signal carry_st6 : std_logic_vector(61 downto 0);
+signal carry_st7 : std_logic_vector(64 downto 0);
+signal result : std_logic_vector(65 downto 0);

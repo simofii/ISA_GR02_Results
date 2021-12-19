@@ -1,0 +1,82 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul_reg_in
+Version: O-2018.06-SP4
+Date   : Sat Dec  4 17:52:56 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I1/B_SIG_reg[2]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I2/REG_OUT_MPY/data_out_reg[48]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul_reg_in       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  I1/B_SIG_reg[2]/CK (DFF_X1)                             0.00       0.00 r
+  I1/B_SIG_reg[2]/Q (DFF_X1)                              0.11       0.11 r
+  I1/B_SIG[2] (FPmul_stage1)                              0.00       0.11 r
+  I2/B_SIG[2] (FPmul_stage2)                              0.00       0.11 r
+  I2/mult_200/b[2] (FPmul_stage2_DW_mult_uns_1_0)         0.00       0.11 r
+  I2/mult_200/U5023/ZN (NAND2_X1)                         0.04       0.15 f
+  I2/mult_200/U5418/ZN (OAI21_X1)                         0.05       0.20 r
+  I2/mult_200/U5313/ZN (AOI21_X1)                         0.03       0.24 f
+  I2/mult_200/U3055/ZN (OAI21_X1)                         0.05       0.29 r
+  I2/mult_200/U4804/ZN (AOI21_X1)                         0.04       0.33 f
+  I2/mult_200/U2940/Z (BUF_X1)                            0.05       0.37 f
+  I2/mult_200/U5448/ZN (OAI21_X1)                         0.05       0.42 r
+  I2/mult_200/U4809/ZN (XNOR2_X1)                         0.06       0.49 r
+  I2/mult_200/U3463/ZN (INV_X1)                           0.04       0.52 f
+  I2/mult_200/U5155/ZN (OAI21_X1)                         0.05       0.57 r
+  I2/mult_200/U3355/ZN (XNOR2_X1)                         0.06       0.63 r
+  I2/mult_200/U1000/S (FA_X1)                             0.12       0.75 f
+  I2/mult_200/U998/CO (FA_X1)                             0.10       0.85 f
+  I2/mult_200/U989/S (FA_X1)                              0.13       0.99 r
+  I2/mult_200/U988/S (FA_X1)                              0.11       1.10 f
+  I2/mult_200/U3687/ZN (NAND2_X1)                         0.04       1.14 r
+  I2/mult_200/U3576/ZN (INV_X1)                           0.02       1.16 f
+  I2/mult_200/U5286/ZN (AOI21_X1)                         0.05       1.21 r
+  I2/mult_200/U5253/ZN (OAI21_X1)                         0.03       1.25 f
+  I2/mult_200/U5162/ZN (AOI21_X1)                         0.05       1.30 r
+  I2/mult_200/U5397/ZN (OAI21_X1)                         0.04       1.34 f
+  I2/mult_200/U4803/ZN (AOI21_X1)                         0.07       1.41 r
+  I2/mult_200/U3069/Z (BUF_X2)                            0.05       1.46 r
+  I2/mult_200/U5492/ZN (OAI21_X1)                         0.04       1.50 f
+  I2/mult_200/U5202/ZN (XNOR2_X1)                         0.05       1.55 f
+  I2/mult_200/product[48] (FPmul_stage2_DW_mult_uns_1_0)
+                                                          0.00       1.55 f
+  I2/REG_OUT_MPY/data_in[48] (ffd_N_bit64)                0.00       1.55 f
+  I2/REG_OUT_MPY/U124/ZN (NAND2_X1)                       0.03       1.58 r
+  I2/REG_OUT_MPY/U29/ZN (NAND2_X1)                        0.02       1.60 f
+  I2/REG_OUT_MPY/data_out_reg[48]/D (DFFR_X1)             0.01       1.61 f
+  data arrival time                                                  1.61
+
+  clock MY_CLK (rise edge)                                1.72       1.72
+  clock network delay (ideal)                             0.00       1.72
+  clock uncertainty                                      -0.07       1.65
+  I2/REG_OUT_MPY/data_out_reg[48]/CK (DFFR_X1)            0.00       1.65 r
+  library setup time                                     -0.04       1.61
+  data required time                                                 1.61
+  --------------------------------------------------------------------------
+  data required time                                                 1.61
+  data arrival time                                                 -1.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
