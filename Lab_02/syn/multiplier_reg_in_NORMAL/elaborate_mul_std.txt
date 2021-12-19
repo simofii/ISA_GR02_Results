@@ -1,0 +1,20 @@
+Loading db file '/software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db'
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/dw_foundation.sldb'
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/gtech.db'
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'FPmul_reg_in'.
+Reading ddc file '/home/isa02_2021_2022/Desktop/Git/Lab02/syn/ffd_N_bit32.ddc'.
+Reading ddc file '/home/isa02_2021_2022/Desktop/Git/Lab02/syn/FPmul_stage1.ddc'.
+Reading ddc file '/home/isa02_2021_2022/Desktop/Git/Lab02/syn/FPmul_stage2.ddc'.
+Reading ddc file '/home/isa02_2021_2022/Desktop/Git/Lab02/syn/FPmul_stage3.ddc'.
+Reading ddc file '/home/isa02_2021_2022/Desktop/Git/Lab02/syn/FPmul_stage4.ddc'.
+Reading ddc file '/home/isa02_2021_2022/Desktop/Git/Lab02/syn/UnpackFP.ddc'.
+Reading ddc file '/home/isa02_2021_2022/Desktop/Git/Lab02/syn/FPnormalize_SIG_width28.ddc'.
+Reading ddc file '/home/isa02_2021_2022/Desktop/Git/Lab02/syn/FPround_SIG_width28.ddc'.
+Reading ddc file '/home/isa02_2021_2022/Desktop/Git/Lab02/syn/PackFP.ddc'.
+1
