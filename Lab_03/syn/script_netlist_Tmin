@@ -1,0 +1,9 @@
+ungroup -all -flatten
+report_area > report_area_flatten_Tmin.txt
+report_resources > report_resources_flatten_Tmin.txt
+report_cell > report_cell_flatten_Tmin.txt
+check_design > check_design_flatten_Tmin.txt
+change_names -hierarchy -rules verilog
+write_sdf ../netlist_CORRECT/RISC_V.sdf
+write -f verilog -hierarchy -output ../netlist_CORRECT/RISC_V.v
+write_sdc ../netlist_CORRECT/RISC_V.sdc

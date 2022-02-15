@@ -1,0 +1,155 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RISC_V' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISC_V
+Version: O-2018.06-SP4
+Date   : Sun Feb  6 15:51:04 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: rf_addr_wr_WB_comp/data_out_reg[4]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: zero_OS_comp/data_out_reg
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISC_V             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rf_addr_wr_WB_comp/data_out_reg[4]/CK (DFFR_X1)         0.00 #     0.00 r
+  rf_addr_wr_WB_comp/data_out_reg[4]/Q (DFFR_X1)          0.11       0.11 f
+  rf_addr_wr_WB_comp/data_out[4] (ffd_N_bit5_1)           0.00       0.11 f
+  forwarding_unit_EX_comp/rd_WB[4] (FWD_U_N_bit5_N_bit_sel2)
+                                                          0.00       0.11 f
+  forwarding_unit_EX_comp/U81/ZN (OR2_X1)                 0.06       0.17 f
+  forwarding_unit_EX_comp/U3/ZN (OR3_X1)                  0.09       0.26 f
+  forwarding_unit_EX_comp/U90/ZN (OAI22_X2)               0.08       0.34 r
+  forwarding_unit_EX_comp/U5/ZN (NOR2_X1)                 0.05       0.39 f
+  forwarding_unit_EX_comp/sel_frw_imm[0] (FWD_U_N_bit5_N_bit_sel2)
+                                                          0.00       0.39 f
+  mux_fwd_OS_comp/sel[0] (mux_5to1_N_bit32_0)             0.00       0.39 f
+  mux_fwd_OS_comp/U99/ZN (NOR2_X1)                        0.05       0.44 r
+  mux_fwd_OS_comp/U104/Z (XOR2_X1)                        0.04       0.48 f
+  mux_fwd_OS_comp/U12/Z (BUF_X1)                          0.04       0.53 f
+  mux_fwd_OS_comp/U120/ZN (AOI222_X1)                     0.10       0.62 r
+  mux_fwd_OS_comp/U114/ZN (NAND2_X1)                      0.04       0.66 f
+  mux_fwd_OS_comp/sig_out[0] (mux_5to1_N_bit32_0)         0.00       0.66 f
+  forward_mux_in2_comp/in1[0] (mux_3to1_N_bit32_1)        0.00       0.66 f
+  forward_mux_in2_comp/U3/ZN (NAND2_X1)                   0.03       0.69 r
+  forward_mux_in2_comp/U1/ZN (NAND3_X1)                   0.05       0.74 f
+  forward_mux_in2_comp/sig_out[0] (mux_3to1_N_bit32_1)
+                                                          0.00       0.74 f
+  ALU_comp/in2[0] (alu_N_bit_data32_N_bit_mode3)          0.00       0.74 f
+  ALU_comp/U258/ZN (XNOR2_X1)                             0.07       0.81 f
+  ALU_comp/adder_component/in2[0] (adder_N_bit32_2)       0.00       0.81 f
+  ALU_comp/adder_component/add_1_root_add_22_2/B[0] (adder_N_bit32_2_DW01_add_0)
+                                                          0.00       0.81 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_0/CO (FA_X1)
+                                                          0.11       0.92 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_1/CO (FA_X1)
+                                                          0.09       1.01 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_2/CO (FA_X1)
+                                                          0.09       1.10 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_3/CO (FA_X1)
+                                                          0.09       1.19 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_4/CO (FA_X1)
+                                                          0.09       1.28 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_5/CO (FA_X1)
+                                                          0.09       1.38 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_6/CO (FA_X1)
+                                                          0.09       1.47 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_7/CO (FA_X1)
+                                                          0.09       1.56 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_8/CO (FA_X1)
+                                                          0.09       1.65 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_9/CO (FA_X1)
+                                                          0.09       1.74 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_10/CO (FA_X1)
+                                                          0.09       1.83 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_11/CO (FA_X1)
+                                                          0.09       1.92 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_12/CO (FA_X1)
+                                                          0.09       2.01 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_13/CO (FA_X1)
+                                                          0.09       2.10 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_14/CO (FA_X1)
+                                                          0.09       2.19 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_15/CO (FA_X1)
+                                                          0.09       2.28 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_16/CO (FA_X1)
+                                                          0.09       2.37 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_17/CO (FA_X1)
+                                                          0.09       2.46 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_18/CO (FA_X1)
+                                                          0.09       2.55 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_19/CO (FA_X1)
+                                                          0.09       2.64 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_20/CO (FA_X1)
+                                                          0.09       2.73 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_21/CO (FA_X1)
+                                                          0.09       2.83 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_22/CO (FA_X1)
+                                                          0.09       2.92 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_23/CO (FA_X1)
+                                                          0.09       3.01 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_24/CO (FA_X1)
+                                                          0.09       3.10 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_25/CO (FA_X1)
+                                                          0.09       3.19 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_26/CO (FA_X1)
+                                                          0.09       3.28 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_27/CO (FA_X1)
+                                                          0.09       3.37 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_28/CO (FA_X1)
+                                                          0.09       3.46 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_29/CO (FA_X1)
+                                                          0.09       3.55 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_30/CO (FA_X1)
+                                                          0.09       3.64 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U1_31/S (FA_X1)
+                                                          0.11       3.75 f
+  ALU_comp/adder_component/add_1_root_add_22_2/SUM[31] (adder_N_bit32_2_DW01_add_0)
+                                                          0.00       3.75 f
+  ALU_comp/adder_component/result[31] (adder_N_bit32_2)
+                                                          0.00       3.75 f
+  ALU_comp/U260/ZN (AOI22_X1)                             0.06       3.80 r
+  ALU_comp/U261/ZN (OAI211_X1)                            0.05       3.85 f
+  ALU_comp/U3/ZN (NOR3_X1)                                0.05       3.90 r
+  ALU_comp/U259/ZN (NAND4_X1)                             0.05       3.95 f
+  ALU_comp/U257/ZN (NOR2_X1)                              0.04       3.99 r
+  ALU_comp/zero (alu_N_bit_data32_N_bit_mode3)            0.00       3.99 r
+  zero_OS_comp/data_in (ffd_std_6)                        0.00       3.99 r
+  zero_OS_comp/U3/ZN (NAND2_X1)                           0.03       4.02 f
+  zero_OS_comp/U2/ZN (OAI21_X1)                           0.03       4.05 r
+  zero_OS_comp/data_out_reg/D (DFFR_X1)                   0.01       4.06 r
+  data arrival time                                                  4.06
+
+  clock MY_CLK (rise edge)                                4.23       4.23
+  clock network delay (ideal)                             0.00       4.23
+  clock uncertainty                                      -0.07       4.16
+  zero_OS_comp/data_out_reg/CK (DFFR_X1)                  0.00       4.16 r
+  library setup time                                     -0.03       4.13
+  data required time                                                 4.13
+  --------------------------------------------------------------------------
+  data required time                                                 4.13
+  data arrival time                                                 -4.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+1

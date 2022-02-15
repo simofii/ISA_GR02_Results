@@ -1,0 +1,172 @@
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/gtech.db'
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'RISC_V'.
+Information: Building the design 'ffd' instantiated from design 'RISC_V' with
+	the parameters "N_bit=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine ffd_N_bit32 line 16 in file
+		'../src_datapath_ABS/ffd.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_out_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'adder' instantiated from design 'RISC_V' with
+	the parameters "N_bit=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_2to1' instantiated from design 'RISC_V' with
+	the parameters "N_bit=32". (HDL-193)
+Warning:  ../src_datapath_ABS/mux_2to1.vhd:18: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 16 in file
+	'../src_datapath_ABS/mux_2to1.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            18            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'ffd' instantiated from design 'RISC_V' with
+	the parameters "N_bit=5". (HDL-193)
+
+Inferred memory devices in process
+	in routine ffd_N_bit5 line 16 in file
+		'../src_datapath_ABS/ffd.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_out_reg     | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'register_file' instantiated from design 'RISC_V' with
+	the parameters "N_bit_addr=5,N_bit_data=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine register_file_N_bit_addr5_N_bit_data32 line 45 in file
+		'../src_datapath_ABS/register_file.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      data_reg       | Flip-flop | 1024  |  Y  | N  | Y  | N  | N  | N  | N  |
+|   data_read1_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|   data_read2_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+===============================================================================
+|             block name/line               | Inputs | Outputs | # sel inputs |
+===============================================================================
+| register_file_N_bit_addr5_N_bit_data32/54 |   32   |   32    |      5       |
+| register_file_N_bit_addr5_N_bit_data32/55 |   32   |   32    |      5       |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'imm_generator' instantiated from design 'RISC_V' with
+	the parameters "N_bit=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'CU' instantiated from design 'RISC_V' with
+	the parameters "N_bit=7". (HDL-193)
+
+Statistics for case statements in always block at line 33 in file
+	'../src_datapath_ABS/CU.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            48            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 104 in file
+	'../src_datapath_ABS/CU.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           106            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine CU_N_bit7 line 33 in file
+		'../src_datapath_ABS/CU.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  current_state_reg  | Flip-flop |   2   |  Y  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ffd_std'. (HDL-193)
+
+Inferred memory devices in process
+	in routine ffd_std line 15 in file
+		'../src_datapath_ABS/ffd_std.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_out_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ffd' instantiated from design 'RISC_V' with
+	the parameters "N_bit=3". (HDL-193)
+
+Inferred memory devices in process
+	in routine ffd_N_bit3 line 16 in file
+		'../src_datapath_ABS/ffd.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_out_reg     | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'FWD_U' instantiated from design 'RISC_V' with
+	the parameters "N_bit=5,N_bit_sel=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine FWD_U_N_bit5_N_bit_sel2 line 32 in file
+		'../src_datapath_ABS/FWD_U.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  func_menus_1_reg   | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|  state_menus_2_reg  | Flip-flop |   7   |  Y  | N  | N  | N  | N  | N  | N  |
+|  state_menus_1_reg  | Flip-flop |   7   |  Y  | N  | N  | N  | N  | N  | N  |
+|   curr_state_reg    | Flip-flop |   7   |  Y  | N  | N  | N  | N  | N  | N  |
+|      func_reg       | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'mux_3to1' instantiated from design 'RISC_V' with
+	the parameters "N_bit=32". (HDL-193)
+
+Statistics for case statements in always block at line 16 in file
+	'../src_datapath_ABS/mux_3to1.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            18            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'alu' instantiated from design 'RISC_V' with
+	the parameters "N_bit_data=32,N_bit_mode=3". (HDL-193)
+Warning:  ../src_datapath_ABS/alu.vhd:10: The port default value in entity declaration for port 'mode' is not supported. Presto ignores it. (ELAB-802)
+Presto compilation completed successfully.
+Information: Building the design 'abs_calculator' instantiated from design 'RISC_V' with
+	the parameters "N_bit=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_5to1' instantiated from design 'RISC_V' with
+	the parameters "N_bit=32". (HDL-193)
+
+Statistics for case statements in always block at line 16 in file
+	'../src_datapath_ABS/mux_5to1.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            18            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'shifter' instantiated from design 'alu_N_bit_data32_N_bit_mode3' with
+	the parameters "N_bit_data=32,N_bit_shift=5". (HDL-193)
+Presto compilation completed successfully.
+1

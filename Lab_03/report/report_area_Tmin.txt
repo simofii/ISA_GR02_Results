@@ -1,0 +1,31 @@
+Warning: Design 'RISC_V' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : RISC_V
+Version: O-2018.06-SP4
+Date   : Sat Feb  5 20:26:36 2022
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+Number of ports:                         3185
+Number of nets:                         11897
+Number of cells:                         7596
+Number of combinational cells:           5887
+Number of sequential cells:              1653
+Number of macros/black boxes:               0
+Number of buf/inv:                       1364
+Number of references:                      54
+
+Combinational area:               6912.010041
+Buf/Inv area:                      942.969985
+Noncombinational area:            8716.022253
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 15628.032294
+Total area:                 undefined
+1

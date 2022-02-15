@@ -1,0 +1,29 @@
+source synopsys_dc.setup
+analyze -f vhdl -lib WORK ../src_datapath_ABS/ffd.vhd
+analyze -f vhdl -lib WORK ../src_datapath_ABS/ffd_std.vhd
+analyze -f vhdl -lib WORK ../src_datapath_ABS/mux_2to1.vhd
+analyze -f vhdl -lib WORK ../src_datapath_ABS/mux_3to1.vhd
+analyze -f vhdl -lib WORK ../src_datapath_ABS/mux_5to1.vhd
+analyze -f vhdl -lib WORK ../src_datapath_ABS/register_file.vhd
+analyze -f vhdl -lib WORK ../src_datapath_ABS/imm_generator.vhd
+analyze -f vhdl -lib WORK ../src_datapath_ABS/shifter.vhd
+analyze -f vhdl -lib WORK ../src_datapath_ABS/adder.vhd
+analyze -f vhdl -lib WORK ../src_datapath_ABS/alu.vhd
+analyze -f vhdl -lib WORK ../src_datapath_ABS/abs_calculator.vhd
+analyze -f vhdl -lib WORK ../src_datapath_ABS/FWD_U.vhd
+analyze -f vhdl -lib WORK ../src_datapath_ABS/CU.vhd
+analyze -f vhdl -lib WORK ../src_datapath_ABS/RISC_V.vhd
+set power_preserve_rtl_hier_names true
+elaborate RISC_V -arch behavior -lib WORK > elaborate_ABS.txt
+create_clock -name MY_CLK -period 0.0 clk
+set_dont_touch_network MY_CLK
+set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk]
+set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
+set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+report_clock
+compile
+report_timing > report_timing_ABS_0ns.txt
+report_area > report_area_ABS_0ns.txt
+report_resources > report_resources_ABS_0ns.txt
+report_cell > report_cell_ABS_0ns.txt

@@ -1,0 +1,110 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RISC_V' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISC_V
+Version: O-2018.06-SP4
+Date   : Sun Feb  6 15:41:33 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: rf_addr_wr_OS_comp/data_out_reg[0]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: zero_OS_comp/data_out_reg
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISC_V             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rf_addr_wr_OS_comp/data_out_reg[0]/CK (SDFFR_X1)        0.00 #     0.00 r
+  rf_addr_wr_OS_comp/data_out_reg[0]/Q (SDFFR_X1)         0.08       0.08 f
+  rf_addr_wr_OS_comp/data_out[0] (ffd_N_bit5_2)           0.00       0.08 f
+  forwarding_unit_EX_comp/rd_OS[0] (FWD_U_N_bit5_N_bit_sel2)
+                                                          0.00       0.08 f
+  forwarding_unit_EX_comp/U40/ZN (NOR3_X1)                0.06       0.14 r
+  forwarding_unit_EX_comp/U23/ZN (AND3_X1)                0.05       0.20 r
+  forwarding_unit_EX_comp/U27/ZN (NAND2_X1)               0.03       0.23 f
+  forwarding_unit_EX_comp/U18/ZN (AND2_X1)                0.04       0.27 f
+  forwarding_unit_EX_comp/U24/ZN (AND2_X1)                0.04       0.31 f
+  forwarding_unit_EX_comp/sel_frw_imm[0] (FWD_U_N_bit5_N_bit_sel2)
+                                                          0.00       0.31 f
+  mux_fwd_OS_comp/sel[0] (mux_5to1_N_bit32_0)             0.00       0.31 f
+  mux_fwd_OS_comp/U43/ZN (OR2_X1)                         0.07       0.37 f
+  mux_fwd_OS_comp/U35/ZN (XNOR2_X1)                       0.08       0.45 f
+  mux_fwd_OS_comp/U66/ZN (AOI22_X1)                       0.06       0.51 r
+  mux_fwd_OS_comp/U68/ZN (NAND2_X1)                       0.03       0.55 f
+  mux_fwd_OS_comp/U69/ZN (OAI22_X1)                       0.05       0.60 r
+  mux_fwd_OS_comp/U70/ZN (INV_X1)                         0.03       0.63 f
+  mux_fwd_OS_comp/sig_out[4] (mux_5to1_N_bit32_0)         0.00       0.63 f
+  forward_mux_in2_comp/in1[4] (mux_3to1_N_bit32_1)        0.00       0.63 f
+  forward_mux_in2_comp/U44/ZN (AOI21_X1)                  0.04       0.67 r
+  forward_mux_in2_comp/U49/ZN (INV_X1)                    0.04       0.70 f
+  forward_mux_in2_comp/sig_out[4] (mux_3to1_N_bit32_1)
+                                                          0.00       0.70 f
+  ALU_comp/in2[4] (alu_N_bit_data32_N_bit_mode3)          0.00       0.70 f
+  ALU_comp/U142/ZN (XNOR2_X1)                             0.07       0.77 f
+  ALU_comp/adder_component/in2[4] (adder_N_bit32_2)       0.00       0.77 f
+  ALU_comp/adder_component/add_1_root_add_22_2/B[4] (adder_N_bit32_2_DW01_add_1)
+                                                          0.00       0.77 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U469/ZN (NOR2_X1)
+                                                          0.04       0.82 r
+  ALU_comp/adder_component/add_1_root_add_22_2/U714/ZN (OAI21_X1)
+                                                          0.04       0.85 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U712/ZN (AOI21_X1)
+                                                          0.04       0.90 r
+  ALU_comp/adder_component/add_1_root_add_22_2/U674/ZN (OAI21_X1)
+                                                          0.04       0.94 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U466/ZN (INV_X1)
+                                                          0.03       0.97 r
+  ALU_comp/adder_component/add_1_root_add_22_2/U740/ZN (OAI21_X1)
+                                                          0.03       1.00 f
+  ALU_comp/adder_component/add_1_root_add_22_2/U587/ZN (XNOR2_X1)
+                                                          0.05       1.06 f
+  ALU_comp/adder_component/add_1_root_add_22_2/SUM[14] (adder_N_bit32_2_DW01_add_1)
+                                                          0.00       1.06 f
+  ALU_comp/adder_component/result[14] (adder_N_bit32_2)
+                                                          0.00       1.06 f
+  ALU_comp/U311/ZN (NAND2_X1)                             0.03       1.08 r
+  ALU_comp/U105/ZN (AND2_X1)                              0.04       1.12 r
+  ALU_comp/U139/ZN (NAND3_X1)                             0.03       1.15 f
+  ALU_comp/U312/ZN (AOI211_X1)                            0.08       1.23 r
+  ALU_comp/U72/ZN (NAND3_X1)                              0.04       1.27 f
+  ALU_comp/U71/ZN (NOR2_X1)                               0.04       1.31 r
+  ALU_comp/U133/ZN (NAND2_X1)                             0.03       1.33 f
+  ALU_comp/U334/ZN (NOR3_X1)                              0.04       1.37 r
+  ALU_comp/zero (alu_N_bit_data32_N_bit_mode3)            0.00       1.37 r
+  zero_OS_comp/data_in (ffd_std_6)                        0.00       1.37 r
+  zero_OS_comp/U2/Z (MUX2_X1)                             0.05       1.42 r
+  zero_OS_comp/data_out_reg/D (DFFR_X2)                   0.01       1.43 r
+  data arrival time                                                  1.43
+
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                      -0.07      -0.07
+  zero_OS_comp/data_out_reg/CK (DFFR_X2)                  0.00      -0.07 r
+  library setup time                                     -0.03      -0.10
+  data required time                                                -0.10
+  --------------------------------------------------------------------------
+  data required time                                                -0.10
+  data arrival time                                                 -1.43
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.53
+
+
+1
