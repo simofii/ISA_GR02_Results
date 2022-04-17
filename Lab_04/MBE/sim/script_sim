@@ -1,8 +1,0 @@
-source /software/scripts/init_questa10.7c
-vlib work
-vcom -93 -work ./work ../src/ha.vhd
-vcom -93 -work ./work ../src/fa.vhd
-vcom -93 -work ./work ../src/partial_product_generator.vhd
-vcom -93 -work ./work ../src/MBE_molt.vhd
-vlog -sv ../tb/top.sv
-vsim top
