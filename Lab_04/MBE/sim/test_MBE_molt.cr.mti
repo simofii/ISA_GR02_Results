@@ -1,0 +1,51 @@
+/home/isa02_2021_2022/Desktop/Git/Lab04/MBE_Dadda/src/ha.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/isa02_2021_2022/Desktop/Git/Lab04/MBE_Dadda/src/ha.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity ha
+-- Compiling architecture behavioral of ha
+
+} {} {}} /home/isa02_2021_2022/Desktop/Git/Lab04/MBE_Dadda/src/fa.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/isa02_2021_2022/Desktop/Git/Lab04/MBE_Dadda/src/fa.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity fa
+-- Compiling architecture behavioral of fa
+
+} {} {}} /home/isa02_2021_2022/Desktop/Git/Lab04/MBE_Dadda/src/MBE_molt.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/isa02_2021_2022/Desktop/Git/Lab04/MBE_Dadda/src/MBE_molt.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MBE_molt
+-- Compiling architecture behavioral of MBE_molt
+
+} {} {}} /home/isa02_2021_2022/Desktop/Git/Lab04/MBE_Dadda/src/partial_product_generator.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/isa02_2021_2022/Desktop/Git/Lab04/MBE_Dadda/src/partial_product_generator.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity partial_product_generator
+-- Compiling architecture behavior of partial_product_generator
+
+} {} {}} /home/isa02_2021_2022/Desktop/Git/Lab04/MBE_Dadda/tb/top.sv {2 {vlog -work work -vopt -sv -stats=none /home/isa02_2021_2022/Desktop/Git/Lab04/MBE_Dadda/tb/top.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+** Note: (vlog-2286) /home/isa02_2021_2022/Desktop/Git/Lab04/MBE_Dadda/tb/top.sv(2): Using implicit +incdir+/software/mentor/questa10.7c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package top_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Warning: ../tb/monitor.sv(49): (vlog-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
+** Warning: ../tb/monitor_out.sv(48): (vlog-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
+-- Compiling interface dut_if
+-- Compiling module DUT
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}}
